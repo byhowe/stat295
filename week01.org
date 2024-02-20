@@ -1,0 +1,8 @@
+#+title: Lecture Notes: Week 1
+#+author: Ömer Faruk Çavuş
+#+date: <2024-02-19 Mon>
+
+* Information
+This document contains lecture notes taken during the first lecture of STAT295 which is a course given by the Department of Statistics at METU.
+
+This first lecture covers basics of the R programming language.
