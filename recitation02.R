@@ -1,6 +1,8 @@
 # Get the current working directory
 getwd()
 
+setwd(file.path(getwd(), "recit2"))
+
 set.seed(16)
 
 # Create a list of matrices and write them out to disk.
