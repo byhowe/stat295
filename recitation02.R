@@ -6,15 +6,15 @@ setwd(file.path(getwd(), "recit2"))
 set.seed(16)
 
 # Create a list of matrices and write them out to disk.
-M <- matrix(rbinom(72, size = 10, prob = 0.5), nrow = 12, ncol = 6)
-rownames(M) <- paste0("Row.", seq_len(nrow(M)))
-colnames(M) <- paste0("Col.", seq_len(ncol(M)))
+m <- matrix(rbinom(72, size = 10, prob = 0.5), nrow = 12, ncol = 6)
+rownames(m) <- paste0("Row.", seq_len(nrow(m)))
+colnames(m) <- paste0("Col.", seq_len(ncol(m)))
 
-L <- matrix(rnorm(72), nrow = 12, ncol = 6)
-rownames(L) <- paste0("Row.", seq_len(nrow(L)))
-colnames(L) <- paste0("Col.", seq_len(ncol(L)))
+l <- matrix(rnorm(72), nrow = 12, ncol = 6)
+rownames(l) <- paste0("Row.", seq_len(nrow(l)))
+colnames(l) <- paste0("Col.", seq_len(ncol(l)))
 
-out <- list(L, M)
+out <- list(l, m)
 write.csv(out, "recit2out.csv")
 
 # Create a function
@@ -42,7 +42,8 @@ barplot(baby10$n, names.arg = baby10$name,
         main = "Number of names by sex",
         xlab = "Name", ylab = "Proportion",
         cex.names = 0.8, beside = TRUE)
-legend("topright", legend = unique(baby10$sex), fill = c("lightblue", "pink"), title = "sex")
+legend("topright", legend = unique(baby10$sex),
+       fill = c("lightblue", "pink"), title = "sex")
 dev.print(pdf, "babygender.pdf")
 
 var1 <- seq(10, 60, 6)
