@@ -1,5 +1,5 @@
 ---
-title: "Week 8: RMarkDown"
+title: "Week 8: R Markdown"
 author: "Ömer Faruk Çavuş"
 date: "`r Sys.Date()`"
 output: pdf_document
