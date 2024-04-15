@@ -1,0 +1,3 @@
+#+title: STAT295
+
+This repository includes material and other files from the STAT295 (Object Oriented Programming) course given by the Department of Statistics at METU during the 2024 Spring semester.
